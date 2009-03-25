@@ -3,7 +3,7 @@
 		targetNamespace="http://www.respawn.info/screens/eqdkpplusschema.xsd">
 <annotation>
 	<documentation xml:lang="EN">
-		Default-Format for the EQdkp-Plus XML-Raidlog.
+		<![CDATA[ Default-Format for the EQdkp-Plus XML-Raidlog.
  		Project:     EQdkp-Plus
 		License:     Creative Commons - Attribution-Noncommercial-Share Alike 3.0 Unported
 		Link:		http://creativecommons.org/licenses/by-nc-sa/3.0/
@@ -17,7 +17,7 @@
 		@package     eqdkp-plus
 		@version     $Rev$
 
-		$Id$
+		$Id$ ]]>
 	</documentation>
 </annotation>
 

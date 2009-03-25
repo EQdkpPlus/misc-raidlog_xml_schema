@@ -58,7 +58,7 @@
 								<element name="name" type="string" />
 								<element name="enter" type="positiveInteger" />
 								<element name="leave" type="positiveInteger" />
-								<element name="difficulty" type="int" />
+								<element name="difficulty" minOccurs="0" maxOccurs="1" type="int" />
 							</sequence>
 						</complexType>
 					</element>
@@ -93,7 +93,7 @@
 								<element name="times">
 									<complexType>
 										<sequence>
-											<element name="time" maxOccurs="unbounded" type="positiveInteger">
+											<element name="time" minOccurs="2" maxOccurs="unbounded" type="positiveInteger">
 												<complexType>
 													<simpleContent>
 														<extension base="positvieInteger">
@@ -127,8 +127,8 @@
 								<element name="name" type="string" />
 								<element name="time" type="positiveInteger" />
 								<element name="member" type="string" />
-								<element name="cost" type="float" />
-								<element name="itemid" type="int" />
+								<element name="cost" minOccurs="0" maxOccurs="1" type="float" />
+								<element name="itemid" minOccurs="0" maxOccurs="1" type="int" />
 							</sequence>
 						</complexType>
 					</element>

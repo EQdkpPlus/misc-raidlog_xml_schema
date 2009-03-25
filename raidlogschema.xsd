@@ -1,6 +1,6 @@
 <schema xmlns="http://www.w3.org/2001/XMLSchema"
-		xmlns:best="http://www.respawn.info/screens/eqdkpplusschema.xsd"
-		targetNamespace="http://www.respawn.info/screens/eqdkpplusschema.xsd">
+		xmlns:plusrl="http://eqdkp-plus.svn.sourceforge.net/viewvc/eqdkp-plus/tools/xml/schema/trunk/raidlogschema.xsd"
+		targetNamespace="http://eqdkp-plus.svn.sourceforge.net/viewvc/eqdkp-plus/tools/xml/schema/trunk/raidlogschema.xsd">
 <annotation>
 	<documentation xml:lang="EN">
 		<![CDATA[ Default-Format for the EQdkp-Plus XML-Raidlog.
@@ -21,13 +21,13 @@
 	</documentation>
 </annotation>
 
-<element name="head" type="best:header" />
-<element name="raiddata" type="best:raiddatatyp" />
+<element name="head" type="plusrl:header" />
+<element name="raiddata" type="plusrl:raiddatatyp" />
 
 <complexType name="header">
 	<sequence>
-        <element name="export" type="best:nameversion" />
-		<element name="tracker" type="best:nameversion" />
+        <element name="export" type="plusrl:nameversion" />
+		<element name="tracker" type="plusrl:nameversion" />
 		<element name="gameinfo">
 			<complexType>
 				<sequence>
@@ -126,6 +126,7 @@
 							<sequence>
 								<element name="name" type="string" />
 								<element name="time" type="positiveInteger" />
+								<element name="member" type="string" />
 								<element name="cost" type="float" />
 								<element name="itemid" type="int" />
 							</sequence>

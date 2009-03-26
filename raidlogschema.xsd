@@ -21,8 +21,12 @@
 	</documentation>
 </annotation>
 
-<element name="head" type="plusrl:header" />
-<element name="raiddata" type="plusrl:raiddatatyp" />
+<complexType name="string">
+	<sequence>
+		<element name="head" type="plusrl:header" />
+		<element name="raiddata" type="plusrl:raiddatatyp" />
+	</sequence>
+</complexType>
 
 <complexType name="header">
 	<sequence>

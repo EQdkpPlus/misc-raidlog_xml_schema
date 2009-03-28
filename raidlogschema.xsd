@@ -93,6 +93,7 @@
 								<element name="race" type="string" />
 								<element name="class" type="string" />
 								<element name="level" type="int" />
+								<element name="sex" type="plusrl:sex" />
 								<element name="note" minOccurs="0" maxOccurs="1" type="string" />
 								<element name="times">
 									<complexType>
@@ -141,5 +142,12 @@
 		</element>
 	</sequence>
 </complexType>
+
+<simpleType name="sex">
+	<restriction base="string">
+		<enumeration value="m" />
+		<enumeration value="f" />
+	</restriction>
+</simpleType>
 
 </schema>

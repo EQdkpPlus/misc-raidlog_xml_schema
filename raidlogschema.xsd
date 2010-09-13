@@ -77,6 +77,7 @@
 							<sequence>
 								<element name="name" type="string" />
 								<element name="time" type="positiveInteger" />
+								<element name="difficulty" minOccurs="0" maxOccurs="1" type="int" />
 							</sequence>
 						</complexType>
 					</element>
@@ -107,6 +108,13 @@
 																	<restriction base="string">
 																		<enumeration value="join" />
 																		<enumeration value="leave" />
+																	</restriction>
+																</simpleType>
+															</attribute>
+															<attribute name="extra" use="optional">
+																<simpleType>
+																	<restriction base="string">
+																		<enumeration value="standby" />
 																	</restriction>
 																</simpleType>
 															</attribute>
@@ -145,8 +153,8 @@
 
 <simpleType name="sex">
 	<restriction base="string">
-		<enumeration value="m" />
-		<enumeration value="f" />
+		<enumeration value="2" />
+		<enumeration value="3" />
 	</restriction>
 </simpleType>
 
